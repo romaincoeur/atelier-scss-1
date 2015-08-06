@@ -1,0 +1,430 @@
+/**********************police**********************/
+@font-face {
+    font-family: "Kraskario";
+    src: url("../fonts/Kraskarioitalic.ttf");
+    font-style: italic; }
+@font-face {
+    font-family: "Kraskario";
+    src: url("../fonts/Kraskario.ttf");
+    font-style: normal; }
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSans-Regular.ttf");
+    font-weight: 400; }
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSans-Bold.ttf");
+    font-weight: 700; }
+/**************************************************/
+
+
+@media (max-width: 1000px) {
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-left, .navbar-right {
+        float: none !important;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+
+    .navbar-nav {
+        float: none !important;
+        margin-top: 7px;
+    }
+
+    .navbar-nav > li {
+        float: none;
+    }
+
+    .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .collapse.in {
+        display: block !important;
+    }
+}
+
+h1, h2, h3 {
+    font-family: "Kraskario", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+nav {
+    font-family: "OpenSans", verdana, arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+body {
+    font-family: "OpenSans", verdana, arial, sans-serif;
+    font-size: 15px;
+    background-image: url(../images/bandes_fond.jpg);
+    padding-top: -20px;
+}
+
+h1 {
+    color: #094030;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    behavior: url(../fonts/PIE.htc);
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 33px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+#container {
+    padding-right: 35px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: yellow;
+}
+
+#logonav {
+    margin-top: -20px;
+    max-width: 250px;
+}
+
+.index .navbar-default {
+    background-color: #C8F992;
+    background-image: none;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.5);
+    -moz-box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.5);
+    box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.5);
+}
+
+.nous .navbar-default {
+    background-color: #C8F992;
+    background-image: none;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.5);
+    -moz-box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.5);
+    box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.5);
+}
+
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 0;
+}
+
+.enhaut {
+    background-color: #FFFFFF;
+    border: 1px solid #C8F992;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    behavior: url(../fonts/PIE.htc);
+    padding-top: 45px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.grand-logo {
+    padding: 0 40px;
+}
+
+.grand-logo img {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+#presentation {
+    background-color: #C8F992;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    behavior: url(../fonts/PIE.htc);
+    border: 1px solid #a3f549;
+    padding: 10px;
+}
+
+#presentation img {
+    margin-top: -50px;
+}
+
+#presentation h1 {
+    margin-top: -10px;
+}
+
+#presentation p {
+    margin-top: -10px;
+}
+
+#pedagogie-section {
+    margin-top: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    list-style: square;
+}
+
+#pedagogie-section li {
+    margin-bottom: 15px;
+}
+
+
+#pedagogie {
+    padding-top: 50px;
+}
+
+#bureau {
+    background-image: url("../images/fond_bureau.jpg");
+    background-repeat: no-repeat;
+    background-attachment: local;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    behavior: url(../fonts/PIE.htc);
+    z-index: 3;
+    margin-top: 30px;
+    color: #0C0B0D;
+    padding: 20px 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#equipe {
+    background-color: #FFFFFF;
+    border: 1px solid #C8F992;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    behavior: url(../fonts/PIE.htc);
+    margin: 30px 20px 0;
+    padding-top: 40px;
+}
+
+.annim img {
+    border-radius: 100%;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border: 8px solid #C8F992;
+}
+
+.recruit {
+    background-color: #C8F992;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    behavior: url(../fonts/PIE.htc);
+    border: 1px solid #a3f549;
+    padding: 10px 5px;
+    margin: 25px 0;
+}
+
+#ateliers {
+    background-color: #FFFFFF;
+    border: 1px solid #C8F992;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    behavior: url(../fonts/PIE.htc);
+    color: #0C0B0D;
+    font-size: 15px;
+    margin: 30px 20px 0;
+    padding-top: 40px;
+}
+
+#ateliers .notice {
+    background-color: #C8F992;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    behavior: url(../fonts/PIE.htc);
+    border: 1px solid #a3f549;
+    list-style: square;
+    margin: 15px 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#nous {
+    background-color: #FFFFFF;
+    border: 1px solid #C8F992;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    behavior: url(../fonts/PIE.htc);
+    color: #0C0B0D;
+    font-size: 15px;
+    margin: 30px 20px 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+#nous h2 {
+    text-align: center;
+}
+
+#nous .well {
+    background-color: #C8F992;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    behavior: url(../fonts/PIE.htc);
+    border: 1px solid #a3f549;
+    background-image: none;
+    padding: 20px;
+}
+
+#planning {
+    background-color: #FFFFFF;
+    border: 1px solid #C8F992;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    behavior: url(../fonts/PIE.htc);
+    margin: 30px 20px 0;
+    padding-top: 40px;
+}
+
+#planning h2 {
+    text-align: center;
+}
+
+#planning ul {
+    list-style: none;
+}
+
+#planning .notice {
+    background-color: #C8F992;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    behavior: url(../fonts/PIE.htc);
+    border: 1px solid #a3f549;
+    list-style: square;
+    margin: 15px 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+#contact h1 {
+    margin-top: 50px;
+}
+
+#contact h1 .background {
+    background-color: #FFFFFF;
+    border: 1px solid #C8F992;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    behavior: url(../fonts/PIE.htc);
+}
+
+#carousel-example-generic {
+    box-shadow: 2px 2px 2px 2px #242424;
+}
+
+#carousel-example-generic img {
+    width: 100%;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+#adresses {
+    margin-bottom: 50px;
+    padding: 30px 15px 15px;
+}
+
+#adresses .img-thumbnail {
+    border-color: #C8F992;
+}
+
+address {
+    margin: 0 0 50px 15px;
+}
+
+.carte {
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+.responsive-table-line {
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    behavior: url(../fonts/PIE.htc);
+    text-align: left;
+}
+
+.responsive-table-line tbody > tr > td, .responsive-table-line thead > tr > th, .responsive-table-line table {
+    border: 2px solid black;
+}
+
+.bulle {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    behavior: url(../fonts/PIE.htc);
+    border: 1px solid #C8F992;
+}
+
+.bulle h1 {
+    margin: 0;
+}
+
+.bulle h2 {
+    margin-top: 0;
+}
+
+.bulle p {
+    margin-bottom: 0; }
+
+.titre {
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #C8F992;
+    padding: 15px;
+    border-radius: 5px 5px 0 0;
+    border: solid 1px #a3f549;
+}
