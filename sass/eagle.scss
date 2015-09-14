@@ -1,0 +1,315 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass";
+
+/*------------------------------------*\
+    $TABLE DES MATIERES
+\*------------------------------------*/
+/*
+ * RESET...............Réinitialisation des styles par défaut
+ * POLICE.............Vous êtes en train de le lire
+ * TYPOGRAPHIE.............Vous êtes en train de le lire
+ * NAVIGATION.............Vous êtes en train de le lire
+ * CAROUSEL.............Vous êtes en train de le lire
+ * CSS GENERAL................Les polices de caractère
+ * FOOTER................Les polices de caractère
+ * MEDIA QUERIES................Les polices de caractère
+ */
+
+
+
+
+/*------------------------------------*\
+    $POLICES
+\*------------------------------------*/
+@font-face {
+    font-family: "Kraskario";
+    src: url("../fonts/Kraskarioitalic.ttf");
+    font-style: italic; }
+@font-face {
+    font-family: "Kraskario";
+    src: url("../fonts/Kraskario.ttf");
+    font-style: normal; }
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSans-Regular.ttf");
+    font-weight: 400; }
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSans-Bold.ttf");
+    font-weight: 700; }
+
+
+ 
+
+
+/*------------------------------------*\
+    $TYPOGRAPHIE
+\*------------------------------------*/
+h1, h2, h3 {
+    font-family: "Kraskario", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+h1 {
+    color: #094030;
+    @include border-radius;
+    behavior: url(../fonts/PIE.htc);
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 42px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+p {
+    margin: 0 0 10px;
+    line-height: 1.5em;
+}
+
+
+
+
+
+/*------------------------------------*\
+    $NAVIGATION
+\*------------------------------------*/
+nav {
+    font-family: "OpenSans", verdana, arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.logonav {
+    margin-top: -20px;
+    max-width: 250px;
+}
+
+.nous .navbar-default {
+    background-color: #C8F992;
+    background-image: none;
+    @include box-shadow (0 2px 4px 0 rgba(50, 50, 50, 0.5));
+}
+
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 0;
+}
+
+
+
+
+/*------------------------------------*\
+    $CAROUSEL
+\*------------------------------------*/
+#carousel-example-generic {
+    box-shadow: 2px 2px 2px 2px #242424;
+}
+
+    #carousel-example-generic img {
+        width: 100%;
+    }
+
+    .carousel-inner {
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+
+
+/*------------------------------------*\
+    $SECTION
+\*------------------------------------*/
+.section {
+    @include border-radius;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.section-blanche {
+    background-color: #fff;
+    border: 1px solid #C8F992;
+    margin-top: 30px;
+}
+.section-verte {
+    @include border-radius;
+    background-color: #C8F992;
+    border: solid 1px #a3f549;
+    padding: 10px;
+}
+
+
+
+
+/*------------------------------------*\
+    $GENERAL
+\*------------------------------------*/
+body {
+    font-family: "OpenSans", verdana, arial, sans-serif;
+    font-size: 15px;
+    background-image: url(../images/bandes_fond.jpg);
+    padding-top: -20px;
+}
+.sous-titre {
+    color: #094030;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    padding-top: 50px;
+}
+
+.grand-logo {
+    padding: 0 40px;
+    margin-top: 15px;
+}
+
+.grand-logo img {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.presentation {
+    padding: 10px 10px 25px 10px;
+}
+    .presentation img {
+    margin-top: -50px
+    }
+    .presentation h1, .presentation p{
+    margin-top: -10px;
+    }
+
+.pedagogie li {
+    list-style: square;
+    padding-bottom: 20px;
+}
+
+.annim {
+    border-radius: 100%;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border: 8px solid #C8F992;
+}
+.recrutement {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.bureau {
+    background-image: url("../images/fond_bureau.jpg");
+    background-repeat: no-repeat;
+    background-attachment: local;
+    @include background-size(center);
+    background-position: center;
+    behavior: url(../fonts/PIE.htc);
+    z-index: 3;
+    margin-top: 30px;
+    padding: 20px 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+    .sous-titre-bureau {
+        color: #094030;
+        background-color: #fff;
+        
+    }
+    .encart {
+        @include border-radius;
+        background-color: #fff;
+        border: 1px solid #C8F992;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    .encart-gauche {
+    margin-left: 35px;
+    }
+    .encart-droit {
+    margin-right: 35px;
+    }
+.adresse {
+    margin-bottom: 40px;
+}
+.temoignage {
+    margin-bottom: 20px;
+}
+
+
+
+
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
+footer {
+    margin-top: 40px;
+    padding-top: 20px !important;
+    padding-bottom: 30px !important;
+}
+
+
+
+
+
+/*------------------------------------*\
+    $MEDIA QUERIES
+\*------------------------------------*/
+@media (max-width: 1000px) {
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-left, .navbar-right {
+        float: none !important;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+
+    .navbar-nav {
+        float: none !important;
+        margin-top: 7px;
+    }
+
+    .navbar-nav > li {
+        float: none;
+    }
+
+    .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .collapse.in {
+        display: block !important;
+    }
+}

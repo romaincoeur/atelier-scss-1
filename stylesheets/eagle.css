@@ -1,430 +1,418 @@
-/**********************police**********************/
-@font-face {
-    font-family: "Kraskario";
-    src: url("../fonts/Kraskarioitalic.ttf");
-    font-style: italic; }
-@font-face {
-    font-family: "Kraskario";
-    src: url("../fonts/Kraskario.ttf");
-    font-style: normal; }
-@font-face {
-    font-family: "OpenSans";
-    src: url("../fonts/OpenSans-Regular.ttf");
-    font-weight: 400; }
-@font-face {
-    font-family: "OpenSans";
-    src: url("../fonts/OpenSans-Bold.ttf");
-    font-weight: 700; }
-/**************************************************/
-
-
-@media (max-width: 1000px) {
-    .navbar-header {
-        float: none;
-    }
-
-    .navbar-left, .navbar-right {
-        float: none !important;
-    }
-
-    .navbar-toggle {
-        display: block;
-    }
-
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-    }
-
-    .navbar-fixed-top {
-        top: 0;
-        border-width: 0 0 1px;
-    }
-
-    .navbar-collapse.collapse {
-        display: none !important;
-    }
-
-    .navbar-nav {
-        float: none !important;
-        margin-top: 7px;
-    }
-
-    .navbar-nav > li {
-        float: none;
-    }
-
-    .navbar-nav > li > a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
-    .collapse.in {
-        display: block !important;
-    }
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 
+/* line 22, ../../../../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*------------------------------------*\
+    $TABLE DES MATIERES
+\*------------------------------------*/
+/*
+ * RESET...............Réinitialisation des styles par défaut
+ * POLICE.............Vous êtes en train de le lire
+ * TYPOGRAPHIE.............Vous êtes en train de le lire
+ * NAVIGATION.............Vous êtes en train de le lire
+ * CAROUSEL.............Vous êtes en train de le lire
+ * CSS GENERAL................Les polices de caractère
+ * FOOTER................Les polices de caractère
+ * MEDIA QUERIES................Les polices de caractère
+ */
+/*------------------------------------*\
+    $POLICES
+\*------------------------------------*/
+@font-face {
+  font-family: "Kraskario";
+  src: url("../fonts/Kraskarioitalic.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Kraskario";
+  src: url("../fonts/Kraskario.ttf");
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Bold.ttf");
+  font-weight: 700;
+}
+/*------------------------------------*\
+    $TYPOGRAPHIE
+\*------------------------------------*/
+/* line 53, ../sass/eagle.scss */
 h1, h2, h3 {
-    font-family: "Kraskario", serif;
-    font-weight: 400;
-    font-style: italic;
+  font-family: "Kraskario", serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
-nav {
-    font-family: "OpenSans", verdana, arial, sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-}
-
-body {
-    font-family: "OpenSans", verdana, arial, sans-serif;
-    font-size: 15px;
-    background-image: url(../images/bandes_fond.jpg);
-    padding-top: -20px;
-}
-
+/* line 59, ../sass/eagle.scss */
 h1 {
-    color: #094030;
-    border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    behavior: url(../fonts/PIE.htc);
-    text-align: center;
-    font-size: 42px;
-    margin-bottom: 25px;
+  color: #094030;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  behavior: url(../fonts/PIE.htc);
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 25px;
 }
 
+/* line 68, ../sass/eagle.scss */
 h2 {
-    font-size: 33px;
+  font-size: 42px;
 }
 
+/* line 72, ../sass/eagle.scss */
 h3 {
-    font-size: 28px;
+  font-size: 28px;
 }
 
-#container {
-    padding-right: 35px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: yellow;
+/* line 76, ../sass/eagle.scss */
+p {
+  margin: 0 0 10px;
+  line-height: 1.5em;
 }
 
-#logonav {
-    margin-top: -20px;
-    max-width: 250px;
+/*------------------------------------*\
+    $NAVIGATION
+\*------------------------------------*/
+/* line 88, ../sass/eagle.scss */
+nav {
+  font-family: "OpenSans", verdana, arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
 }
 
-.index .navbar-default {
-    background-color: #C8F992;
-    background-image: none;
-    -webkit-box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.5);
-    -moz-box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.5);
-    box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.5);
+/* line 95, ../sass/eagle.scss */
+.logonav {
+  margin-top: -20px;
+  max-width: 250px;
 }
 
+/* line 100, ../sass/eagle.scss */
 .nous .navbar-default {
-    background-color: #C8F992;
-    background-image: none;
-    -webkit-box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.5);
-    -moz-box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.5);
-    box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.5);
+  background-color: #C8F992;
+  background-image: none;
+  -moz-box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.5);
+  -webkit-box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.5);
+  box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.5);
 }
 
+/* line 106, ../sass/eagle.scss */
 .navbar-fixed-top {
-    top: 0;
-    border-width: 0 0 0;
+  top: 0;
+  border-width: 0 0 0;
 }
 
-.enhaut {
-    background-color: #FFFFFF;
-    border: 1px solid #C8F992;
-    border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    behavior: url(../fonts/PIE.htc);
-    padding-top: 45px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.grand-logo {
-    padding: 0 40px;
-}
-
-.grand-logo img {
-    width: 80%;
-    display: block;
-    margin: auto;
-}
-
-#presentation {
-    background-color: #C8F992;
-    border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    behavior: url(../fonts/PIE.htc);
-    border: 1px solid #a3f549;
-    padding: 10px;
-}
-
-#presentation img {
-    margin-top: -50px;
-}
-
-#presentation h1 {
-    margin-top: -10px;
-}
-
-#presentation p {
-    margin-top: -10px;
-}
-
-#pedagogie-section {
-    margin-top: 0;
-    padding-right: 20px;
-    padding-left: 20px;
-    margin-right: 20px;
-    margin-left: 20px;
-    list-style: square;
-}
-
-#pedagogie-section li {
-    margin-bottom: 15px;
-}
-
-
-#pedagogie {
-    padding-top: 50px;
-}
-
-#bureau {
-    background-image: url("../images/fond_bureau.jpg");
-    background-repeat: no-repeat;
-    background-attachment: local;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: center;
-    border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    behavior: url(../fonts/PIE.htc);
-    z-index: 3;
-    margin-top: 30px;
-    color: #0C0B0D;
-    padding: 20px 20px;
-    margin-right: 20px;
-    margin-left: 20px;
-}
-
-#equipe {
-    background-color: #FFFFFF;
-    border: 1px solid #C8F992;
-    border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    behavior: url(../fonts/PIE.htc);
-    margin: 30px 20px 0;
-    padding-top: 40px;
-}
-
-.annim img {
-    border-radius: 100%;
-    width: 50%;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    border: 8px solid #C8F992;
-}
-
-.recruit {
-    background-color: #C8F992;
-    border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    behavior: url(../fonts/PIE.htc);
-    border: 1px solid #a3f549;
-    padding: 10px 5px;
-    margin: 25px 0;
-}
-
-#ateliers {
-    background-color: #FFFFFF;
-    border: 1px solid #C8F992;
-    border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    behavior: url(../fonts/PIE.htc);
-    color: #0C0B0D;
-    font-size: 15px;
-    margin: 30px 20px 0;
-    padding-top: 40px;
-}
-
-#ateliers .notice {
-    background-color: #C8F992;
-    border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    behavior: url(../fonts/PIE.htc);
-    border: 1px solid #a3f549;
-    list-style: square;
-    margin: 15px 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-#nous {
-    background-color: #FFFFFF;
-    border: 1px solid #C8F992;
-    border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    behavior: url(../fonts/PIE.htc);
-    color: #0C0B0D;
-    font-size: 15px;
-    margin: 30px 20px 0;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    margin-bottom: 50px;
-}
-
-#nous h2 {
-    text-align: center;
-}
-
-#nous .well {
-    background-color: #C8F992;
-    border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    behavior: url(../fonts/PIE.htc);
-    border: 1px solid #a3f549;
-    background-image: none;
-    padding: 20px;
-}
-
-#planning {
-    background-color: #FFFFFF;
-    border: 1px solid #C8F992;
-    border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    behavior: url(../fonts/PIE.htc);
-    margin: 30px 20px 0;
-    padding-top: 40px;
-}
-
-#planning h2 {
-    text-align: center;
-}
-
-#planning ul {
-    list-style: none;
-}
-
-#planning .notice {
-    background-color: #C8F992;
-    border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    behavior: url(../fonts/PIE.htc);
-    border: 1px solid #a3f549;
-    list-style: square;
-    margin: 15px 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-
-#contact h1 {
-    margin-top: 50px;
-}
-
-#contact h1 .background {
-    background-color: #FFFFFF;
-    border: 1px solid #C8F992;
-    border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    behavior: url(../fonts/PIE.htc);
-}
-
+/*------------------------------------*\
+    $CAROUSEL
+\*------------------------------------*/
+/* line 117, ../sass/eagle.scss */
 #carousel-example-generic {
-    box-shadow: 2px 2px 2px 2px #242424;
+  box-shadow: 2px 2px 2px 2px #242424;
 }
 
+/* line 121, ../sass/eagle.scss */
 #carousel-example-generic img {
-    width: 100%;
+  width: 100%;
 }
 
+/* line 125, ../sass/eagle.scss */
 .carousel-inner {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
-#adresses {
-    margin-bottom: 50px;
-    padding: 30px 15px 15px;
+/*------------------------------------*\
+    $SECTION
+\*------------------------------------*/
+/* line 137, ../sass/eagle.scss */
+.section {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-#adresses .img-thumbnail {
-    border-color: #C8F992;
+/* line 144, ../sass/eagle.scss */
+.section-blanche {
+  background-color: #fff;
+  border: 1px solid #C8F992;
+  margin-top: 30px;
 }
 
-address {
-    margin: 0 0 50px 15px;
+/* line 149, ../sass/eagle.scss */
+.section-verte {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #C8F992;
+  border: solid 1px #a3f549;
+  padding: 10px;
 }
 
-.carte {
-    background-color: #FFFFFF;
-    width: 100%;
+/*------------------------------------*\
+    $GENERAL
+\*------------------------------------*/
+/* line 162, ../sass/eagle.scss */
+body {
+  font-family: "OpenSans", verdana, arial, sans-serif;
+  font-size: 15px;
+  background-image: url(../images/bandes_fond.jpg);
+  padding-top: -20px;
 }
 
-.responsive-table-line {
-    border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    behavior: url(../fonts/PIE.htc);
-    text-align: left;
+/* line 168, ../sass/eagle.scss */
+.sous-titre {
+  color: #094030;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  padding-top: 50px;
 }
 
-.responsive-table-line tbody > tr > td, .responsive-table-line thead > tr > th, .responsive-table-line table {
-    border: 2px solid black;
+/* line 175, ../sass/eagle.scss */
+.grand-logo {
+  padding: 0 40px;
+  margin-top: 15px;
 }
 
-.bulle {
-    margin-bottom: 20px;
-    padding: 10px;
-    background-color: white;
-    border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    behavior: url(../fonts/PIE.htc);
-    border: 1px solid #C8F992;
+/* line 180, ../sass/eagle.scss */
+.grand-logo img {
+  width: 80%;
+  display: block;
+  margin: auto;
 }
 
-.bulle h1 {
-    margin: 0;
+/* line 186, ../sass/eagle.scss */
+.presentation {
+  padding: 10px 10px 25px 10px;
 }
 
-.bulle h2 {
-    margin-top: 0;
+/* line 189, ../sass/eagle.scss */
+.presentation img {
+  margin-top: -50px;
 }
 
-.bulle p {
-    margin-bottom: 0; }
-
-.titre {
-    padding: 0;
-    margin-bottom: 20px;
+/* line 192, ../sass/eagle.scss */
+.presentation h1, .presentation p {
+  margin-top: -10px;
 }
 
+/* line 196, ../sass/eagle.scss */
+.pedagogie li {
+  list-style: square;
+  padding-bottom: 20px;
+}
+
+/* line 201, ../sass/eagle.scss */
+.annim {
+  border-radius: 100%;
+  width: 50%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border: 8px solid #C8F992;
+}
+
+/* line 208, ../sass/eagle.scss */
+.recrutement {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* line 213, ../sass/eagle.scss */
+.bureau {
+  background-image: url("../images/fond_bureau.jpg");
+  background-repeat: no-repeat;
+  background-attachment: local;
+  -moz-background-size: center;
+  -o-background-size: center;
+  -webkit-background-size: center;
+  background-size: center;
+  background-position: center;
+  behavior: url(../fonts/PIE.htc);
+  z-index: 3;
+  margin-top: 30px;
+  padding: 20px 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/* line 226, ../sass/eagle.scss */
+.sous-titre-bureau {
+  color: #094030;
+  background-color: #fff;
+}
+
+/* line 231, ../sass/eagle.scss */
+.encart {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #C8F992;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 239, ../sass/eagle.scss */
+.encart-gauche {
+  margin-left: 35px;
+}
+
+/* line 242, ../sass/eagle.scss */
+.encart-droit {
+  margin-right: 35px;
+}
+
+/* line 245, ../sass/eagle.scss */
+.adresse {
+  margin-bottom: 40px;
+}
+
+/* line 248, ../sass/eagle.scss */
+.temoignage {
+  margin-bottom: 20px;
+}
+
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
+/* line 258, ../sass/eagle.scss */
 footer {
-    background-color: #C8F992;
-    padding: 15px;
-    border-radius: 5px 5px 0 0;
-    border: solid 1px #a3f549;
+  margin-top: 40px;
+  padding-top: 20px !important;
+  padding-bottom: 30px !important;
+}
+
+/*------------------------------------*\
+    $MEDIA QUERIES
+\*------------------------------------*/
+@media (max-width: 1000px) {
+  /* line 272, ../sass/eagle.scss */
+  .navbar-header {
+    float: none;
+  }
+
+  /* line 276, ../sass/eagle.scss */
+  .navbar-left, .navbar-right {
+    float: none !important;
+  }
+
+  /* line 280, ../sass/eagle.scss */
+  .navbar-toggle {
+    display: block;
+  }
+
+  /* line 284, ../sass/eagle.scss */
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  /* line 289, ../sass/eagle.scss */
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+
+  /* line 294, ../sass/eagle.scss */
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+
+  /* line 298, ../sass/eagle.scss */
+  .navbar-nav {
+    float: none !important;
+    margin-top: 7px;
+  }
+
+  /* line 303, ../sass/eagle.scss */
+  .navbar-nav > li {
+    float: none;
+  }
+
+  /* line 307, ../sass/eagle.scss */
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  /* line 312, ../sass/eagle.scss */
+  .collapse.in {
+    display: block !important;
+  }
 }
